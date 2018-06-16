@@ -1,10 +1,7 @@
 {
-  "name": "rbel",
-  "version": "1.0.2",
-  "description": "allows to define custom elements for hyperx, defaulting to your h function of choice",
+  "name": "ninlil",
+  "version": "2.0.0",
+  "description": "use custom elements in tagged template literals",
   "main": "index.js",
-  "license": "BSD",
-  "dependencies": {
-    "hyperx": "^2.3.0"
-  }
+  "license": "BSD"
 }

@@ -1,12 +1,15 @@
-# rbel
+# ninlil
 
-create your own elements for hyperx tagged templates
+Fork of [rbel](https://github.com/aaaristo/rbel)
+
+use custom elements in tagged template literals
 
 # example
 
 ```js
-const h = require('hyperscript');
-const html = require('rbel')(h, {
+const domBuilder = require('hyperx')
+const h = require('belit');
+const html = require('ninlil')(domBuilder, h, {
     row: (attrs, children) => html`
         <div class="row">
            ${children}
@@ -25,9 +28,14 @@ console.log(html`
 </row>`.outerHTML);
 ```
 
+Values to use for `domBuilder`:
+* hyperx - hyperx
+* hyperz - hyperz
+
 Values to use for `h`:
 
 * virtual-dom - `vdom.h`
 * react - `React.createElement`
 * bel - `require('bel').createElement` (only client side see [#1](https://github.com/aaaristo/rbel/issues/1))
+* belit - belit (both SSR and client)
 * hyperscript - hyperscript

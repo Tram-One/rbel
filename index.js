@@ -1,6 +1,4 @@
-const hyperx = require('hyperx');
-
-module.exports = function (h, components) {
+module.exports = function (domBuilder, h, components) {
     const eh = function (tagName, attrs, children) {
         const component = components[tagName];
 
@@ -9,7 +7,7 @@ module.exports = function (h, components) {
         return node;
     };
 
-    const hx = hyperx(eh);
+    const hx = domBuilder(eh);
 
     hx.h = eh;
 
