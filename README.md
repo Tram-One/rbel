@@ -1,4 +1,4 @@
-# ninlil
+# rbel
 
 Fork of [rbel](https://github.com/aaaristo/rbel)
 
@@ -8,8 +8,8 @@ use custom elements in tagged template literals
 
 ```js
 const domBuilder = require('hyperx')
-const h = require('belit');
-const html = require('ninlil')(domBuilder, h, {
+const h = require('nanohtml');
+const html = require('rbel')(domBuilder, h, {
     row: (attrs, children) => html`
         <div class="row">
            ${children}
