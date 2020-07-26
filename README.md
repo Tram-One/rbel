@@ -30,12 +30,11 @@ console.log(html`
 
 Values to use for `domBuilder`:
 * hyperx - hyperx
-* hyperz - hyperz
 
 Values to use for `h`:
 
 * virtual-dom - `vdom.h`
 * react - `React.createElement`
 * bel - `require('bel').createElement` (only client side see [#1](https://github.com/aaaristo/rbel/issues/1))
-* belit - belit (both SSR and client)
+* @tram-one/nanohtml - nanohtml (both SSR and client)
 * hyperscript - hyperscript
